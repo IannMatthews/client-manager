@@ -1,0 +1,148 @@
+<div
+  class="container d-flex flex-column justify-content-center letter-background h-100"
+>
+  <div class="row">
+    <div class="col title">
+      <h2>Cliente</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-container">
+        <div [formGroup]="customerForm" class="container">
+          <div class="row">
+            <div class="col">
+              <label for="name">Nome: </label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Nome"
+                formControlName="name"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="phoneNumber">Telefone: </label>
+              <input
+                id="phoneNumber"
+                type="text"
+                placeholder="Telefone"
+                formControlName="phoneNumber"
+              />
+            </div>
+            <div class="col">
+              <label for="nif">NIF: </label>
+              <input
+                id="nif"
+                type="text"
+                placeholder="NIF"
+                formControlName="nif"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="email">E-mail: </label>
+              <input
+                id="email"
+                type="text"
+                placeholder="E-mail"
+                formControlName="email"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="adress">Morada: </label>
+              <input
+                id="adress"
+                type="text"
+                placeholder="Morada"
+                formControlName="adress"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="postalCode">Código Postal: </label>
+              <input
+                id="postalCode"
+                type="text"
+                placeholder="Código Postal"
+                formControlName="postalCode"
+              />
+            </div>
+            <div class="col">
+              <label for="currentCost">Custo Atual: </label>
+              <input
+                id="currentCost"
+                type="text"
+                placeholder="Custo Atual"
+                formControlName="currentCost"
+              />
+            </div>
+            <div class="col d-flex align-items-center">
+              <label for="isHolder" class="me-2">Titular?</label>
+              <input id="isHolder" type="checkbox" formControlName="isHolder" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="observation">Observações: </label>
+              <textarea
+                id="observation"
+                cols="30"
+                rows="5"
+                placeholder="Observações"
+                formControlName="observation"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-container">
+        <div [formGroup]="contractForm" class="container">
+          <div class="row">
+            <div class="col d-flex">
+              <span class="me-2">Contrato Assinado?</span>
+              <input
+                id="isContractAssigned"
+                type="checkbox"
+                formControlName="isContractAssigned"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="plan">Plano: </label>
+              <select formControlName="plan" id="plan">
+                <option [ngValue]="null" disabled>Escolha o Plano</option>
+                <option *ngFor="let plan of plans" [ngValue]="plan.id">
+                  {{ plan.name }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <app-large-button (click)="back()">Voltar</app-large-button>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <app-large-button (click)="save()">Salvar</app-large-button>
+      </div>
+    </div>
+  </div>
+</div>

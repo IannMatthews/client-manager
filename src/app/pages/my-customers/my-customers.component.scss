@@ -1,0 +1,22 @@
+/* JUST COMMON TABLE STYLES... */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px 16px;
+}
+
+.tableFixHead {
+  overflow: auto;
+  height: 500px;
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  background-color: rgba($color: #ffd284, $alpha: 0.5);
+  backdrop-filter: blur(5px);
+}

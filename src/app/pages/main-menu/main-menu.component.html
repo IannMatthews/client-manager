@@ -1,0 +1,21 @@
+<div class="container d-flex flex-column justify-content-around h-100">
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <div class="title">GESTÃO DE CLIENTES</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <app-large-button routerLink="/customer">Novo Cliente</app-large-button>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <app-large-button routerLink="/my-customers">
+        Meus Clientes
+      </app-large-button>
+    </div>
+    <div class="col d-flex justify-content-center">
+      <app-large-button (click)="backup()"> Backup </app-large-button>
+    </div>
+  </div>
+</div>
