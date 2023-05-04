@@ -3,17 +3,17 @@
 
 @font-face {
   font-family: "StardewValleyLogoRegular";
-  src: url("/assets/fonts/stardew-valley-regular.ttf");
+  src: url("/client-manager/assets/fonts/stardew-valley-regular.ttf");
 }
 
 @font-face {
   font-family: "StardewValleyLogoAllCaps";
-  src: url("/assets/fonts/stardew-valley-all-caps.ttf");
+  src: url("/client-manager/assets/fonts/stardew-valley-all-caps.ttf");
 }
 
 @font-face {
   font-family: "StardewValley";
-  src: url("/assets/fonts/stardew_valley.ttf");
+  src: url("/client-manager/assets/fonts/stardew_valley.ttf");
 }
 
 body,
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-image: url("/assets/stardewbackground.png");
+  background-image: url("/client-manager/assets/stardewbackground.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .letter-background {
-  background-image: url("/assets/letter.png");
+  background-image: url("/client-manager/assets/letter.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
