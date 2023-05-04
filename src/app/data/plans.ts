@@ -1,22 +1,22 @@
-import { Plan } from "../models";
+import { Plan } from '../models';
 
 export const PLANS: Plan[] = [
   {
     id: 1,
-    name: 'P1',
-    value: 100,
-    comission: 20
+    name: '2p',
+    value: 0,
+    comission: 0,
   },
   {
     id: 2,
-    name: 'P2',
-    value: 100,
-    comission: 20
+    name: '3p',
+    value: 0,
+    comission: 0,
   },
   {
     id: 3,
-    name: 'P3',
-    value: 100,
-    comission: 20
+    name: '4p',
+    value: 0,
+    comission: 0,
   },
 ];
